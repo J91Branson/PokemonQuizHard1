@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokemon Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../PokemonQuizHard1/syle.css">
+
+</head>
+
+<body>
+    <div id="main-page" class="container-fluid">
+            
+        <div class="jumbotron jumbotron-fluid text-light" >
+                    <div class="container">
+                      <h1 class="display-4">Pokemon Quiz </h1>
+                      <p class="lead">This quiz will test your knowledge of Pokemon Characters.</p>
+                    </div>
+                  </div>
+        
+                <div id="button-content" class="container">
+                <p id="main-button"><button type="button" class=" btn-lg btn-block text-light "
+                        onclick="start()"> Start
+                        Quiz.</button></p>
+                        
+                </div>
+            
+            
+            
+                
+            <div id="quiz-content" class="container">
+                <div id="quiz">
+                    <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-6">
+                            <p>  What Pokemon hatched from Ash's egg?</p>
+                                <p><input type="radio" name="question1" value="a"> Aipom<br>
+                                <input type="radio" name="question1" value="b"> Keckleon<br>
+                                <input type="radio" name="question1" value="c"> Elekid<br>
+                                <input type="radio" name="question1" value="d"> Phanpy<br></p>
+                            <!--d-->
+                        </div>
+                        <div class="col-6">
+                            <p>  What Pokemon did Misty catch in the Whirl Islands?</p>
+                                <p><input type="radio" name="question2" value="a"> Eevee<br>
+                                <input type="radio" name="question2" value="b"> Golduck<br>
+                                <input type="radio" name="question2" value="c"> Tentacruel<br>
+                                <input type="radio" name="question2" value="d">Corsola<br></p>
+                            <!--d-->
+                        </div>
+                    </div>
+                </div>
+                <br>
+                    <div class="container">
+                        <div class="row justify-content-around">
+                            <div class="col-6">
+                                <p> What two Pokemon save Ash's egg from being stolen by Team Rocket?</p>
+                                    <p><input id="1a" type="radio" name="question3" value="a"> Togepi and Kangaskhan<br>
+                                    <input id="2a" type="radio" name="question3" value="b"> Kangaskhan and Growlithe<br>
+                                    <input id="3a" type="radio" name="question3" value="c"> Kangaskhan and Pikachu<br>
+                                    <input id="4a" type="radio" name="question3" value="d"> Togepi and Growlithe<br></p>
+                                <!--a-->
+                            </div>
+                            <div class="col-6">
+                                <p> What color was Ash's egg?</p>
+                                    <p><input type="radio" name="question4" value="a"> green<br>
+                                    <input type="radio" name="question4" value="b">  red<br>
+                                    <input type="radio" name="question4" value="c"> yellow<br>
+                                    <input type="radio" name="question4" value="d"> blue<br></p>
+                                <!--d-->
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                        <div class="container">
+                            <div class="row justify-content-around">
+                                <div class="col-6">
+                                    <p> What did Sakura's Eevee evolve into?</p>
+                                        <p><input type="radio" name="question5" value="a"> Umbreon<br>
+                                        <input type="radio" name="question5" value="b"> Vaporeon<br>
+                                        <input type="radio" name="question5" value="c"> Flareon<br>
+                                        <input type="radio" name="question5" value="d"> Espeon<br></p>
+                                        <!--d-->
+                                </div>
+                                <div class="col-6">
+                                    <p> Did Ash leave Bulbasaur with Prof. Oak in 'Bulbasaur... The Ambassador'?</p>                                   
+                                        <p><input type="radio" name="question6" value="c"> Yes<br>
+                                        <input type="radio" name="question6" value="d"> No<br></p>
+                                        <!--c-->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                            <div class="container">
+                                <div class="row justify-content-around">
+                                    <div class="col-6">
+                                        <p> Who pretended he was Prof. Oak in 'Will The Real Oak Please Stand Up'?</p>
+                                            <p><input type="radio" name="question7" value="a"> James<br>
+                                            <input type="radio" name="question7" value="b"> Prof. Westwood<br>
+                                            <input type="radio" name="question7" value="c"> Max<br>
+                                            <input type="radio" name="question7" value="d"> Prof. Elm<br></p>
+                                            <!--a-->
+                                    </div>
+                                    <div class="col-6">
+                                        <p> What was the name of the baby Lugia?</p>
+                                            <p><input type="radio" name="question8" value="a"> Lugia<br>
+                                            <input type="radio" name="question8" value="b"> Silver<br>
+                                            <input type="radio" name="question8" value="c">  Gold<br>
+                                            <input type="radio" name="question8" value="d"> Silverwing<br></p>
+                                            <!--b-->
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                                <div class="container">
+                                    <div class="row justify-content-around">
+                                        <div class="col-6">
+                                            <p> What is the name of the guy who wanted to catch Suicune?</p>
+                                                <p><input type="radio" name="question9" value="a"> Marty<br>
+                                                <input type="radio" name="question9" value="b"> Morty<br>
+                                                <input type="radio" name="question9" value="c"> Eusine <br>
+                                                <input type="radio" name="question9" value="d"> Eddie<br></p>
+                                                <!--c-->
+                                        </div>
+                                        <div class="col-6">
+                                            <p> What was the Pokemon that Jasmine used (other than Steelix)?</p>
+                                                <p><input type="radio" name="question10" value="a"> Skarmory<br>
+                                                <input type="radio" name="question10" value="b"> Scizor<br>
+                                                <input type="radio" name="question10" value="c"> Magnemite<br>
+                                                <input type="radio" name="question10" value="d"> Magneton<br></p>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <input type="submit" value="Submit" onclick="score()">
+                                                <!--c-->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="scoreBox">
+                            <p id="correct-text"></p>
+                            <p id="incorrect-text"></p>
+                            <p id="notAnswered-text"></p>
+
+                        </div>
+
+                        
+                        <div id="button-container">
+                            <div id="ta-button">
+                                <p id="main-button"><button type="button" class=" btn-lg btn-block text-light "
+                                onclick="reset()"><i class="fas fa-sync"></i> Try Again? <i class="fas fa-sync"></i></button></p>
+                                </div>
+                        </div>
+
+
+
+
+
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script src="../PokemonQuizHard1/app.js"></script>
+</body>
+
+</html>

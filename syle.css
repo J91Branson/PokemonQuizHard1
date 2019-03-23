@@ -1,0 +1,57 @@
+#quiz {
+    display: none;
+    background-image: url("../PokemonQuizHard1/k3dTPTK-pokemon-wallpapers-for-computer.jpg");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    
+      
+}
+#scoreBox {
+    display: none;
+}
+#some_div {
+    display: none;
+}
+#main-button{
+    display: block;
+}
+#ta-button{ 
+    display: none;
+}
+html {
+    height: 100%;
+    background-color: #1f0005;
+    }
+    body{
+        height: 100%;
+    background-color: #1f0005;
+    
+    }
+#main-page{
+       height: 100%;
+}
+p{
+    color: wheat;
+    text-shadow: 2px 2px 4px black;
+    font-size: 100%;
+    font-weight:bolder;
+    
+    
+     
+}
+#time-container{
+    text-align: center;
+          
+}
+#button-container{
+    text-align: center;
+}
+form{
+    color: white;
+}
+.jumbotron{
+    background-color: black;
+}
+.btn-lg{
+    background-color: black;
+}
