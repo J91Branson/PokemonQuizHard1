@@ -7,10 +7,8 @@ var notAnswered = 0;
 var correctText = document.getElementById("correct-text")
 var incorrectText = document.getElementById("incorrect-text")
 var notAnsweredText = document.getElementById("notAnswered-text")
-var timeLeft = 70;
 var timeLeftText = document.getElementById("timeLeft-text")
-var elem = document.getElementById('some_div');
-var timerId = setInterval(countdown, 1000);
+
 
 
 
@@ -30,9 +28,7 @@ var timerId = setInterval(countdown, 1000);
 function start() {
     document.getElementById("main-button").style.display = "none";
     document.getElementById("quiz").style.display = "block";
-    document.getElementById("some_div").style.display = "inline-block";
-      
-    timeLeftText.textContent = "Time Remaining " + timeLeft;
+    
 
 }
 
@@ -138,7 +134,7 @@ document.querySelector('input[name="question6"]').checked=false;
 if (question6 === "c") {
     correct++;
 }
-else if (question6 === "d") {
+else if (question6 === "a" || "b" || "d") {
     incorrect++;
 }}
 //  question 7
@@ -204,7 +200,7 @@ else if (question10 === "a" || "b" || "d") {
     // this toggles what is visible on their screen.
     document.getElementById("quiz").style.display = "none";
     document.getElementById("scoreBox").style.display = "block";
-    document.getElementById("some_div").style.display = "none";
+    
     document.getElementById("ta-button").style.display = "inline-block";
     // this is the text for our score box
     correctText.textContent = "Correct " + correct;
@@ -217,7 +213,7 @@ else if (question10 === "a" || "b" || "d") {
 function reset() {
     // this toggles what is visible on their screen.
     document.getElementById("quiz").style.display = "none";
-    document.getElementById("some_div").style.display = "none";
+   
     document.getElementById("ta-button").style.display = "none";
     document.getElementById("scoreBox").style.display = "none";
     document.getElementById("main-button").style.display = "block";
